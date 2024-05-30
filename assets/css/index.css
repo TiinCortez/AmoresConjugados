@@ -60,7 +60,25 @@ nav.navbar img{
     height: 75px;
     width: auto;
 }
+.centerLogo{
+    margin-left: 60px;
+}
+.texto-superpuesto {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
 
+.texto-superpuesto img{
+    width: 100%;
+    height: auto;
+}
 
 /* Fondo del navbar-collapse redondeado*/
 .fixed2{
@@ -150,15 +168,17 @@ nav.bg-ngen ul li.form{
     object-fit: cover;
     opacity: .8;
     transition: .5s ease;
+    cursor: pointer;
 }
 
 .carrusel img:hover{
     cursor: pointer;
-    width: 10px;
+    width: 150px;
     opacity: 1;
     filter: contrast(120%);
     overflow-x: auto;
 }
+
 
 @media (max-width: 768px) {
     .carrusel {
@@ -167,6 +187,16 @@ nav.bg-ngen ul li.form{
 
     .slide img{
         width: 500px;
+    }
+    .carrusel img:hover{
+        cursor: pointer;
+        width: 350px;
+        opacity: 1;
+        filter: contrast(120%);
+        overflow-x: auto;
+    }
+    .centerLogo{
+        margin: 0;
     }
 }
 
@@ -226,6 +256,7 @@ p{
     margin: auto;
     overflow: hidden;
     margin-top: 15px;
+    overflow-x: hidden;
 }
 
 .slider .slide-track {
@@ -257,7 +288,7 @@ p{
 
 /* Primer Seccion */
 .anuncio1 {
-    height: 50px;
+    height: 150px;
     background-color: rgb(7, 0, 0);
     text-align: center
 }
@@ -334,6 +365,25 @@ p{
     margin-top: 10px;
 }
 
+.discrecion{
+    margin-top: -10px;
+    justify-content: space-between;
+    background-image: url('../public/velas.jpg');
+    background-position: center;
+    padding: 100px;
+    overflow-x: hidden;
+}
+.discrecion p,
+.discrecion h1{
+    color: white;
+}
+.contenido-opaco2{
+    background-color: rgba(10, 9, 9, 0.5);
+    padding: 3rem;
+    border-radius: 5px;
+    backdrop-filter: blur(50px);
+    color: black;
+}
 .primero{
     margin-top: -10px;
     background-color: #070808;
@@ -375,7 +425,6 @@ p{
 
 .terminosCondiciones {
     max-width: auto;
-    margin-bottom: 10px;
     padding: 100px;
     margin-top: -9px;
     background-color: #f9f9f9;

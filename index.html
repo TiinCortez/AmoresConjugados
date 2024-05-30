@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/index.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=REM:ital,wght@0,653;1,653&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="./assets/public/LogoAmorConjurado.jpg">
     <title>Amor Conjurado</title>
 </head>
@@ -29,8 +32,8 @@
                     </li>
                 </ul>
             </div>
-            <a class="navbar-brand order-1 order-md-3" href="#"><img src="./assets/public/LogoAmorConjurado.jpg"
-                    alt="logo_ngen"></a>
+            <a class="navbar-brand order-1 order-md-3 " href="#">
+                <img class="centerLogo" src="./assets/public/LogoAmorConjurado.jpg"alt="logo_amorC"></a>
             <div class="collapse navbar-collapse order-4 order-md-4 fixed2" id="navbar-right">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
@@ -53,18 +56,22 @@
         <i class="fa fa-whatsapp my-float "></i>
         </a>
         <section class="carrusel">
-            <img src="./assets/public/carrusel3.jpg" alt="">
-            <img src="./assets/public/carrusel5.jpg" alt="">
-            <img src="./assets/public/carrusel1.jpg" alt="">
-            <img src="./assets/public/carrusel4.jpg" alt="">
-            <img src="./assets/public/carrusel6.jpg" alt="">
+            <img src="./assets/public/carrusel3.jpg" id="imagen-cambiable5" alt="Imagen 3">
+            <img src="./assets/public/carrusel5.jpg" id="imagen-cambiable4" alt="Imagen 5">
+            <img src="./assets/public/carrusel1.jpg" id="imagen-cambiable3" alt="Imagen 1">
+            <img src="./assets/public/carrusel4.jpg" id="imagen-cambiable1" alt="Imagen 4">
+            <img src="./assets/public/carrusel6.jpg" id="imagen-cambiable2" alt="Imagen 6">
+            <div class="texto-superpuesto" >
+                <br>
+                <h1>🔥Amor Conjurado 🔥</h1>
+                <p><br>PRACTICAS MILENARIAS DE ESPIRITISMO A TU COMPLETA DISPOSICIÓN</p>
+            </div>
         </section>
         <div class="anuncio1">
-            <h4 class="espacio">¿Estás enfrentando desafíos en el amor? <br> ¿Deseas recuperar a tu pareja y traer de vuelta esa conexión especial?</h4>
-            <p>Descubre el poder de Amor Conjurado y reaviva la llama del amor en solo unos pocos días.</p>    
-        </div>
-        <div>
-            <h1 class="espacio"></h1>
+            <div>
+                <h4>¿Estás enfrentando desafíos en el amor? <br> ¿Deseas recuperar a tu pareja y traer de vuelta esa conexión especial?</h4>
+                <p>Descubre el poder de Amor Conjurado y reaviva la llama del amor en solo unos pocos días.</p>   
+            </div> 
         </div>
         <section class="segundo" data-aos="fade-right" data-aos-duration="350000">
             <div class="box" id="tertimonios">
@@ -89,11 +96,34 @@
                         <p class="card-text">"Habíamos sido estafados antes, pero esta vez todo fue diferente. El tarotista nos brindó herramientas reales y efectivas para mejorar nuestra unión."</p>
                     </div>
                 </div>
-            <div>
-                <h1 class="espacio"></h1>
-            </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="./assets/public/ejepmlo_screanshot.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Laura, 25 años</h5>
+                        <p class="card-text">"Habíamos sido estafados antes, pero esta vez todo fue diferente. El tarotista nos brindó herramientas reales y efectivas para mejorar nuestra unión."</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="./assets/public/ejepmlo_screanshot.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Laura, 25 años</h5>
+                        <p class="card-text">"Habíamos sido estafados antes, pero esta vez todo fue diferente. El tarotista nos brindó herramientas reales y efectivas para mejorar nuestra unión."</p>
+                    </div>
+                </div>
         </section>
-        <section class="primero" data-aos="zoom-in" data-aos-duration="950000">
+        <div>
+            <h1 class="espacio"></h1>
+        </div>
+        <div class="discrecion">
+            <div class="contenido-opaco2">
+              <h1 class="text-center">CUENTANOS TU CASO<span class="text-body-secondary"></span></h1>
+              <p class="text-center">Total Discreción y Seguimiento diario del caso. <br>Consulta ahora mismo desde cualquier lugar.</p>
+            </div>
+        </div>
+        <div>
+            <h1 class="espacio"></h1>
+        </div>
+        <section id="contacto" class="primero" data-aos="zoom-in" data-aos-duration="950000">
             <div class="fondo-whatapp position-relative overflow-hidden p-3 p-md-5 m-md-1 text-center bg-body-tertiary">
                 <div class="col-md-8 p-lg-5 mx-auto my-5 contenido-opaco">
                     <h1 class="fw-bold color_primario">ATENCION EN TODO EL CONTINENTE</h1>
@@ -136,7 +166,6 @@
         <div>
             <h1 class="espacio"></h1>
         </div>
-
         <section class="terminosCondiciones">
             <div class="content">
                 <h1>TERMINOS Y CONDICIONES</h1>
@@ -192,12 +221,18 @@
             </div>
             <button id="toggleButton" class="toggle-button">Ver más</button>
         </section>
+            <div>
+            <h1 class="espacio"></h1>
+        </div>
     </main>
     <!--Cierre de Main-->
     <div class="container1">
         <footer class="row py-5 my-5 border-top">
             <div class="text-center">
                 <img class="footer_img" src="./assets/public/LogoAmorConjurado.jpg" alt="logo_ngen">
+                <a href="https://www.linkedin.com/in/ngenambientalltda" target="_blank" rel="noopener noreferrer"
+                class="nav-link p-0 text-body-secondary">
+                <img src="./assets/public/logo_facebook.png" alt="logo_Linkedin" class="me-2 img_logos"> Facebook</a>
                 <p class="texto_copy text-body-secondary align-self-center mt-2 mb-1">&copy; 2024 Todos los Derechos
                     Reservados.
                     Amor Conjurado</p>
