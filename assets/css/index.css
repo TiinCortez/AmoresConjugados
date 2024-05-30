@@ -290,7 +290,11 @@ p{
 .anuncio1 {
     height: 150px;
     background-color: rgb(7, 0, 0);
-    text-align: center
+    text-align: center;
+    box-sizing: border-box; /* Asegura que el padding se incluya en el tamaño total del elemento */
+    padding: 10px; /* Añade espacio dentro del contenedor */
+    max-width: 100%; /* Limita el ancho máximo del contenedor */
+    overflow: hidden; /* Oculta cualquier contenido que se salga del contenedor */
 }
 
 .anuncio1 p,
@@ -366,16 +370,14 @@ p{
 }
 
 .discrecion{
-    margin-top: -10px;
-    justify-content: space-between;
     background-image: url('../public/velas.jpg');
     background-position: center;
-    padding: 100px;
-    overflow-x: hidden;
+    background-repeat: no-repeat;
+    margin-top: -10px;
 }
 .discrecion p,
 .discrecion h1{
-    color: white;
+    color: rgb(0, 0, 0);
 }
 .contenido-opaco2{
     background-color: rgba(10, 9, 9, 0.5);
@@ -473,7 +475,7 @@ p{
 
 .img_logos {
     height: 50px;
-    width: 100px;
+    width: 50px;
 }
 
 .small-link{
