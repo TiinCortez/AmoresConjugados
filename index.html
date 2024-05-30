@@ -22,14 +22,14 @@
             <div class="collapse navbar-collapse order-3 order-md-2" id="navbar-left">
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item">
-                        <a class="nav-link fw-bold" href="#">Testimonios</a>
+                        <a class="nav-link fw-bold" href="#tertimonios">Testimonios</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fw-bold" href="/nuestraEmpresa">Servicios</a>
+                        <a class="nav-link fw-bold" href="#servicios">Servicios</a>
                     </li>
                 </ul>
             </div>
-            <a class="navbar-brand order-1 order-md-3" href="/"><img src="./assets/public/LogoAmorConjurado.jpg"
+            <a class="navbar-brand order-1 order-md-3" href="#"><img src="./assets/public/LogoAmorConjurado.jpg"
                     alt="logo_ngen"></a>
             <div class="collapse navbar-collapse order-4 order-md-4 fixed2" id="navbar-right">
                 <ul class="navbar-nav ms-auto">
@@ -48,6 +48,10 @@
     <!--Cierre nav-->
     <!--Abertura Main -->
     <main>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <a href="https://api.whatsapp.com/send?phone=541165809835&text=+&text=%C2%A1Amor%20Conjurado!%20%C2%BFPodr%C3%ADan%20brindarme%20mas%20informacion?" class="float pulse" target="_blank">
+        <i class="fa fa-whatsapp my-float "></i>
+        </a>
         <section class="carrusel">
             <img src="./assets/public/carrusel3.jpg" alt="">
             <img src="./assets/public/carrusel5.jpg" alt="">
@@ -55,11 +59,15 @@
             <img src="./assets/public/carrusel4.jpg" alt="">
             <img src="./assets/public/carrusel6.jpg" alt="">
         </section>
+        <div class="anuncio1">
+            <h4 class="espacio">¿Estás enfrentando desafíos en el amor? <br> ¿Deseas recuperar a tu pareja y traer de vuelta esa conexión especial?</h4>
+            <p>Descubre el poder de Amor Conjurado y reaviva la llama del amor en solo unos pocos días.</p>    
+        </div>
         <div>
             <h1 class="espacio"></h1>
         </div>
-        <section class="segundo " data-aos="fade-right" data-aos-duration="350000">
-            <div class="box">
+        <section class="segundo" data-aos="fade-right" data-aos-duration="350000">
+            <div class="box" id="tertimonios">
                 <div class="card" style="width: 18rem;">
                     <img src="./assets/public/ejepmlo_screanshot.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -93,7 +101,7 @@
                         eso, estamos orgullosos de ofrecer nuestros servicios a lo largo y ancho de todo el continente,
                         brindando atención personalizada las 24 horas del día, los 7 días de la semana.</d>
                         <div class="product-device shadow-sm d-none d-md-block"></div>
-                        <a href="https://api.whatsapp.com/send?phone=541165809835&amp;text=Necesito%20su%20Ayuda%20Quiero%20Consultar"
+                        <a href="https://api.whatsapp.com/send?phone=541165809835&text=+&text=%C2%A1Amor%20Conjurado!%20%C2%BFPodr%C3%ADan%20brindarme%20mas%20informacion?"
                             target="_blank"><img src="images/boton_whatsapp02.png" alt="" class="sign"><img
                                 src="./assets/public/boton_whatsapp1.png" alt="" class="sign"></a>
                         <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
@@ -198,21 +206,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+        <script src="./js/conf.js"></script>
 
-    <script>
-        document.getElementById('toggleButton').addEventListener('click', function () {
-            var moreContent = document.getElementById('moreContent');
-            var button = document.getElementById('toggleButton');
 
-            if (moreContent.style.display === 'none' || moreContent.style.display === '') {
-                moreContent.style.display = 'block';
-                button.textContent = 'Ver menos';
-            } else {
-                moreContent.style.display = 'none';
-                button.textContent = 'Ver más';
-            }
-        });
-    </script>
 </body>
 
 </html>
