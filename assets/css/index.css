@@ -222,27 +222,6 @@ p{
     flex-wrap: wrap;
 }
 
-.caja1, .caja2, .caja3 {
-    flex: 1;
-    padding: 20px;
-    box-sizing: border-box;
-    text-align: center;
-    border: 1px solid #ffd700;
-    margin: 10px;
-}
-
-.caja1 {
-    background-color: #00BBD6;
-}
-
-.caja2 {
-    background-color: #ABC178;
-}
-
-.caja3 {
-    background-color: #FFC74E;
-}
-
 .titulo {
     text-align: center;
     margin-top: 5px;
@@ -329,8 +308,11 @@ p{
         background-size: cover;
 }
 .box {
+    margin-top: -9px;
     display: flex;
     background-image: url('../public/imagen_testimonio3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .espacio{
