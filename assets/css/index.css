@@ -7,6 +7,10 @@
     --fontSize-parrafos: 20px;
 }
 
+main{
+    background-color: #000000;
+}
+
 nav.bg-ngen{
     background-color: #e99191;
     background-size: cover;
@@ -60,6 +64,7 @@ nav.navbar img{
     height: 75px;
     width: auto;
 }
+
 .centerLogo{
     margin-left: 60px;
 }
@@ -140,11 +145,22 @@ nav.bg-ngen ul li.form{
     }
 }
 
-.inicio img{
+.inicio {
     width: 100%;
-    height: 1050px;
-    margin-top: -230px;
+    display: flex;
+    justify-content: center; /* Centra la imagen horizontalmente */
+    align-items: center;     /* Centra la imagen verticalmente */
 }
+
+.imgLogo{
+    width: 100%;
+    height: auto;
+    max-height: 1050px; 
+    margin-top: -230px;
+    object-fit: contain;
+    background-color: #16181d;
+}
+
 
 
 .carrusel{
@@ -177,18 +193,15 @@ nav.bg-ngen ul li.form{
 
 @media (max-width: 768px) {
     .carrusel {
-        height: 800px; /* Ajusta la altura para dispositivos móviles */
+        height: 450px;
     }
-    .texto-superpuesto img {
-        width: 100%; /* Asegura que la imagen ocupe el 100% del contenedor */
-        height: auto;
-    }
+
     .slide img{
         width: 500px;
     }
     .carrusel img:hover{
         cursor: pointer;
-        width: 350px;
+        width: 180px;
         opacity: 1;
         filter: contrast(120%);
         overflow-x: auto;
@@ -196,6 +209,14 @@ nav.bg-ngen ul li.form{
     .centerLogo{
         margin: 0;
     }
+
+    .imgLogo{
+        width: 100%;
+        height: 600px;
+        margin-top: -150px;
+    }
+    
+
 }
 
 p{
@@ -384,6 +405,7 @@ p{
     backdrop-filter: blur(50px);
     color: black;
 }
+
 .primero{
     margin-top: -10px;
     background-color: #070808;
